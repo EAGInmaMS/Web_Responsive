@@ -1,0 +1,236 @@
+body{
+    margin:0px;
+}
+
+header{
+    background-color: #7F052A;
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0px;
+}
+
+header img{
+    max-width: 200px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+nav a{
+    color:antiquewhite;
+}
+
+h1,h2{
+    text-align: center;
+    color: #7F052A;
+}
+
+#promociones{
+    width: 65%;
+    margin:3rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#promociones img{
+    max-width: 100%;
+}
+
+#productos{
+    display: grid;
+    grid-template-columns: repeat(3,32%);
+    grid-template-rows: repeat(3,32%);
+    grid-gap: 1.5rem;
+    width: 65%;
+    margin: 3rem auto;
+    object-fit: cover;
+}
+
+#productos img{
+    width: 100%;
+    max-height: 100%;
+}
+
+#notisdestacadas{
+    width: 65%;
+    margin: 2rem auto;
+}
+#notisdestacadas >:first-child{
+    background:url(https://www.nosolorol.com/themes/nth_themanier/css/../img/ornamento-titulo-04.png) bottom right no-repeat;
+}
+#notisdestacadas>:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+#catedestacadas{
+    width: 65%;
+    margin: 3rem auto;
+}
+
+#catedestacadas > :first-child{
+    background: url(https://www.nosolorol.com/themes/nth_themanier/css/../img/ornamento-titulo-03.png) bottom right no-repeat;;
+}
+
+#catedestacadas :last-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+#garantias{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 3rem auto;
+    padding: 0.5rem;
+}
+
+#garantias div{
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#garantias div>:nth-child(2){
+    font-weight: bold;
+}
+
+#descripcion{
+    width: 65%;
+    margin: 3rem auto;
+    text-align: justify;
+}
+
+#descripcion:last-child{
+    color:gray
+}
+
+#Nod,#Guaridas,#Detectives{
+    width: 30%;
+    height: 13rem;
+}
+
+#accesor,#aquelarre,#cultos{
+    width: 30%;
+    height: 13rem;
+}
+
+#Nod{
+    background-image: url(https://www.nosolorol.com/img/nbp/2/4/3/4/2434-small.jpg);
+    background-size: cover;
+}
+
+.escondido,.escondido2,.escondido3{
+    margin-top: 9.8rem;
+    background-color: rgba(00,00,00,0.75);
+    display: block;
+    padding: 1rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+#Nod>div{
+    background-color: rgba(00,00,00,0.75);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    transform: translate3d(0,165px,0);
+    color: white;
+}
+
+#Guaridas>div{
+    background-color: rgba(00,00,00,0.75);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    transform: translate3d(0,165px,0);
+    color: white;
+}
+
+#Detectives>div{
+    background-color: rgba(00,00,00,0.75);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    transform: translate3d(0,165px,0);
+    color: white;
+}
+
+[data-aos^=fade][data-aos^=fade]{
+    opacity: 0;
+}
+
+[data-aos=fade-up]{
+    transform: translate3d(0,85px,0) !important;
+}
+
+[data-aos=fade-down]{
+    transform: translate3d(0,10px,0);
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.escondido3 a{
+    width: 100%;
+}
+
+#Guaridas{
+    background-image: url(https://www.nosolorol.com/img/nbp/2/4/2/7/2427-list.jpg);
+    background-size: cover;
+}
+
+#Detectives{
+    background-image: url(https://www.nosolorol.com/img/nbp/2/3/1/6/2316-list.jpg);
+    background-size: cover;
+}
+
+#accesor{
+    background-image: url(https://www.nosolorol.com/1478-home_default/pack-de-dados-vampiro-5-edicion.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#aquelarre{
+    background-image: url(https://i.blogs.es/806831/aquelarredefinitivainserto/1366_2000.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#cultos{
+    background-image: url(https://www.nosolorol.com/63/cultos-innombrables-papel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    background-color: #7F052A;
+    display: flex;
+    justify-content: space-evenly;
+    color:#bdbdbd;
+}
+
+footer>:first-child{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: larger;
+}
+
+
+footer i{
+    padding: 1rem;
+}
+
+footer>:last-child{
+    padding: 0.5rem;
+}
