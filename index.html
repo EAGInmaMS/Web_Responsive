@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +13,27 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="menunormal">
             <img src="https://www.nosolorol.com/img/nosolorol-ediciones-logo-14727449041.jpg" alt="Logo de NoSoloRol">
-            <a href="">Inicio</a>
-            <a href="">Catálogo</a>
-            <a href="">Noticias</a>
+            <a href="index.html">INICIO</a>
+            <a href="categorias.html">CATEGORÍAS</a>
+            <a href="">NOTICIAS</a>
             <a href="">ADOM</a>
         </nav>
+        <div class="respmenu">
+            <img src="https://www.nosolorol.com/img/nosolorol-ediciones-logo-14727449041.jpg" alt="Logo de NoSoloRol">
+            <input type="checkbox">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+            <nav>
+              <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="categorias.html">CATEGORÍAS</a></li>
+                <li><a href="#">NOTICIAS</a></li>
+                <li><a href="#">ADOM</a></li>
+              </ul>
+            </nav>
+          </div>
     </header>
     <main>
         <h1>Encuentra tus juegos de rol y mesa. Tanto en físico como en digital</h1>
@@ -83,13 +97,13 @@
             </div>
             <div>
                 <div id="accesor">
-                    <a href="">Accesorios</a>
+                    <a  class="escondido" href="">Accesorios</a>
                 </div>
-                <div id="aquelarre">
-                    <a href="">Aquelarre</a>
+                <div  id="aquel">
+                    <a class="escondido" href="">Aquelarre</a>
                 </div>
-                <div id="cultos">
-                    <a href="">Cultos Innombrables</a>
+                <div  id="cultos">
+                    <a class="escondido" href="">Cultos Innombrables</a>
                 </div>
             </div>
             
@@ -149,7 +163,5 @@
             <p>atencionalcliente@nosolorol.com</p>
         </div>
     </footer>
-
-    
 </body>
 </html>

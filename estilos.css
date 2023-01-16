@@ -18,16 +18,96 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0.5rem;
+    padding: 1rem;
+    flex-wrap: wrap;
 }
 
 nav a{
     color:antiquewhite;
 }
 
+nav a:hover{
+    text-decoration: underline;
+    text-decoration-color: antiquewhite;
+}
+
+.respmenu{
+    display: none;
+}
+
+@media (max-width:768px) {
+    #menunormal{
+        display: none;
+    }
+
+    .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+        position: absolute;
+        box-sizing: border-box;
+        margin: 7px;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+      }
+
+      .respmenu .fa-bars, .respmenu .fa-times {
+        font-size: 48px;
+        pointer-events: none;
+      }
+      
+      .respmenu input[type="checkbox"] {
+        opacity: 0;
+      }
+
+      .respmenu ul{
+        list-style: none;
+      }
+      
+      .respmenu {
+        color: antiquewhite;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #7F052A;
+        min-height: 48px;
+        padding: 0.5rem;
+      }
+      .respmenu img{
+        width: 8rem;
+      }
+      
+      .respmenu nav {
+        display: none;
+      }
+      
+      .respmenu input:checked ~ nav {
+        display: block;
+      }
+      
+      .respmenu input:checked ~ .fa-bars {
+        display: none;
+      }
+      
+      .respmenu input:not(:checked) ~ .fa-times {
+        display: none;
+      }
+
+    .respmenu a{
+        color: antiquewhite;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        border-bottom: 2px solid antiquewhite;
+        max-width: 200px;
+        background-color: #7F052A;
+    }
+}
+
 h1,h2{
     text-align: center;
     color: #7F052A;
+    margin:0.67em;
 }
 
 #promociones{
@@ -39,6 +119,17 @@ h1,h2{
 
 #promociones img{
     max-width: 100%;
+}
+
+@media (max-width:768px){
+    #promociones{
+        width: 90%;
+        height: 40vh;
+    }
+
+    #promociones img{
+        height: 20vh;
+    }
 }
 
 #productos{
@@ -56,6 +147,15 @@ h1,h2{
     max-height: 100%;
 }
 
+@media (max-width:768px){
+    #productos{
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: repeat(9,11%);
+        grid-gap: 0.5rem;
+        width: 90%;
+    }
+}
+
 #notisdestacadas{
     width: 65%;
     margin: 2rem auto;
@@ -66,59 +166,6 @@ h1,h2{
 #notisdestacadas>:last-child{
     display: flex;
     justify-content: space-between;
-}
-
-#catedestacadas{
-    width: 65%;
-    margin: 3rem auto;
-}
-
-#catedestacadas > :first-child{
-    background: url(https://www.nosolorol.com/themes/nth_themanier/css/../img/ornamento-titulo-03.png) bottom right no-repeat;;
-}
-
-#catedestacadas :last-child{
-    display: flex;
-    justify-content: space-between;
-}
-
-#garantias{
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin: 3rem auto;
-    padding: 0.5rem;
-}
-
-#garantias div{
-    width: 16%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-#garantias div>:nth-child(2){
-    font-weight: bold;
-}
-
-#descripcion{
-    width: 65%;
-    margin: 3rem auto;
-    text-align: justify;
-}
-
-#descripcion:last-child{
-    color:gray
-}
-
-#Nod,#Guaridas,#Detectives{
-    width: 30%;
-    height: 13rem;
-}
-
-#accesor,#aquelarre,#cultos{
-    width: 30%;
-    height: 13rem;
 }
 
 #Nod{
@@ -194,13 +241,51 @@ a{
     background-size: cover;
 }
 
+#Nod,#Guaridas,#Detectives{
+    width: 30%;
+    height: 13rem;
+}
+
+@media (max-width:768px){
+    #notisdestacadas{
+        width: 90%;
+    }
+    #notisdestacadas>:last-child{
+        flex-wrap: wrap;
+    }
+    #Nod,#Guaridas,#Detectives{
+        width: 90%;
+        height: 13rem;
+        margin: 1rem auto;
+    }
+}
+
+#catedestacadas{
+    width: 65%;
+    margin: 3rem auto;
+}
+
+#catedestacadas > :first-child{
+    background: url(https://www.nosolorol.com/themes/nth_themanier/css/../img/ornamento-titulo-03.png) bottom right no-repeat;;
+}
+
+#catedestacadas>:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+#accesor,#aquel,#cultos{
+    width: 30%;
+    height: 13rem;
+}
+
 #accesor{
     background-image: url(https://www.nosolorol.com/1478-home_default/pack-de-dados-vampiro-5-edicion.jpg);
     background-size: cover;
     background-position: center;
 }
 
-#aquelarre{
+#aquel{
     background-image: url(https://i.blogs.es/806831/aquelarredefinitivainserto/1366_2000.jpg);
     background-size: cover;
     background-position: center;
@@ -210,6 +295,182 @@ a{
     background-image: url(https://www.nosolorol.com/63/cultos-innombrables-papel.jpg);
     background-size: cover;
     background-position: center;
+}
+
+@media (max-width:768px){
+    #catedestacadas{
+        width: 90%;
+    }
+
+    #catedestacadas>:last-child{
+        flex-wrap: wrap;
+    }
+
+    #accesor,#aquel,#cultos{
+        width: 90%;
+        margin: 1rem auto;
+    }
+}
+
+#garantias{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 3rem auto;
+    padding: 0.5rem;
+}
+
+#garantias div{
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#garantias div>:nth-child(2){
+    font-weight: bold;
+}
+
+@media (max-width:768px){
+    #garantias{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    #garantias div{
+        width: 48%;
+    }
+}
+
+#descripcion{
+    width: 65%;
+    margin: 3rem auto;
+    text-align: justify;
+}
+
+#descripcion:last-child{
+    color:gray
+}
+
+@media (max-width:768px){
+    #descripcion{
+        width: 90%;
+    }
+}
+
+#lista_categorias>ol>li:first-child{
+    margin-top: 0px;
+}
+
+#lista_categorias ol, li a{
+	text-align: center;
+	list-style-type: none;
+	color: #7F052A;
+	text-decoration: none;
+	font-size: large;
+}
+
+#lista_categorias ol>li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #7F052A;
+}
+#lista_categorias li{
+	display: flex;
+	justify-content: center;
+	align-content: space-around;
+    align-items: center;
+    border: 1px solid #7F052A;
+	margin: 3% auto;
+	border-radius: 22px;
+	padding: 2rem;
+	width: 60%;
+    height: 4rem;
+	font-family:'Graduate', cursive;
+}
+#lista_categorias ol{
+	margin: 1rem auto;
+	display: inline;
+}
+
+#accesorios{
+    background-image: url(https://www.nosolorol.com/img/c/20-category_small.jpg);
+    background-repeat: no-repeat;
+	background-position: left;
+    background-size: 25rem;
+}
+
+#aquelarre{
+    background-image: url(https://www.nosolorol.com/899-home_default/aquelarre-pantalla-del-dj-papel.jpg);
+    background-repeat: no-repeat;
+	background-position:left;
+    background-size: 25rem;
+}
+
+#blacksad{
+    background-image: url(https://www.nosolorol.com/img/c/112-category_small.jpg);
+    background-repeat: no-repeat;
+	background-position:left;
+    background-size: 25rem;
+}
+
+#changeling{
+    background-image: url(https://www.nosolorol.com/img/c/140-category_small.jpg);
+    background-repeat: no-repeat;
+	background-position:left;
+    background-size: 25rem;
+}
+
+#conbarba{
+    background-image: url(https://www.nosolorol.com/img/c/102-category_small.jpg);
+    background-repeat: no-repeat;
+	background-position:left;
+    background-size: 25rem;
+}
+
+#fate{
+    background-image: url(https://www.nosolorol.com/img/c/114-category_small.jpg);
+    background-repeat: no-repeat;
+	background-position:left;
+    background-size: 25rem;
+}
+
+#fl{
+    background-image: url(https://www.nosolorol.com/img/c/154-category_small.jpg);
+    background-repeat: no-repeat;
+	background-position:left;
+    background-size: 25rem;
+}
+
+#resurgir{
+    background-image: url(https://www.nosolorol.com/img/c/127-category_small.jpg);
+    background-repeat: no-repeat;
+	background-position:left;
+    background-size: 25rem;
+}
+
+#fragmentos{
+    background-image: url(https://www.nosolorol.com/img/c/22-category_small.jpg);
+    background-repeat: no-repeat;
+	background-position:left;
+    background-size: 25rem;
+}
+
+#hitos{
+    background-image: url(https://www.nosolorol.com/img/c/23-category_small.jpg);
+    background-repeat: no-repeat;
+	background-position:left;
+    background-size: 25rem;
+}
+
+@media (max-width:768px){
+    #lista_categorias a{
+        color: #7F052A;
+    }
+
+    #lista_categorias li{
+        height: 2rem;
+        background-size: 9rem;
+    }
 }
 
 footer{
@@ -224,6 +485,7 @@ footer>:first-child{
     align-items: center;
     padding: 1rem;
     font-size: larger;
+    flex-wrap: wrap;
 }
 
 
@@ -233,4 +495,15 @@ footer i{
 
 footer>:last-child{
     padding: 0.5rem;
+}
+
+@media (max-width:768px){
+    footer{
+        text-align: center;
+        justify-content: center;
+    }
+
+    footer>:first-child{
+        padding: 0rem 1rem;
+    }
 }
