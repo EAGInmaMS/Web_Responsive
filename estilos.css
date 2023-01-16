@@ -473,6 +473,38 @@ a{
     }
 }
 
+#unoticias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+#unoticias article{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #7F052A;
+    color: antiquewhite;
+    margin: 1rem 0rem;
+    border: 5px solid grey;
+    border-radius: 9px;
+}
+
+#unoticias button{
+    background: transparent;
+    color: antiquewhite;
+    width: 56%;
+    border-radius: 5px;
+    border: 2px solid antiquewhite;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+}
+
 footer{
     background-color: #7F052A;
     display: flex;
