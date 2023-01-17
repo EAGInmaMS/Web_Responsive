@@ -651,6 +651,8 @@ a{
     font-family: 'Sofia Sans', sans-serif;
     color: #af3398;
     text-align: center;
+    font-weight: bold;
+    font-size: large;
 }
 
 #descripack div>p:last-child{
