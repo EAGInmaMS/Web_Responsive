@@ -24,6 +24,7 @@ nav{
 
 nav a{
     color:antiquewhite;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 nav a:hover{
@@ -101,6 +102,7 @@ nav a:hover{
         border-bottom: 2px solid antiquewhite;
         max-width: 200px;
         background-color: #7F052A;
+        font-family: 'Sofia Sans', sans-serif;
     }
 }
 
@@ -108,6 +110,7 @@ h1,h2{
     text-align: center;
     color: #7F052A;
     margin:0.67em;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 #promociones{
@@ -505,11 +508,99 @@ a{
     padding: 0.5rem;
 }
 
+@media (max-width:768px){
+    #unoticias{
+        justify-content: center;
+    }
+
+    #unoticias article{
+        width: 80%;
+    }
+}
+
+#cabecera,#quees,#manual{
+    width: 75%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+#cabecera p,#quees p,#manual p{
+    font-family: 'Comfortaa', cursive;
+    text-align: justify;
+    font-size: large;
+}
+
+#cabecera img,#quees img, #manual img{
+    width: 50%;
+    margin: 0rem auto;
+}
+
+#packs{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 1.5rem auto;
+}
+
+#packs h2{
+    color: #673291;
+}
+
+#packs>div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#packs article{
+    width: 45%;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#packs img{
+    width: 90%;
+    max-height: 70rem;
+}
+
+#packs>div article>p:nth-child(2){
+    color: #d72282;
+    font-weight: bold;
+}
+
+#packs p{
+    font-family: 'Comfortaa', cursive;
+}
+
+#packs button{
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid #673291;
+    border-radius: 10px;
+}
+
+#packs a{
+    color: #af3398;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: large;
+}
+
 footer{
     background-color: #7F052A;
     display: flex;
     justify-content: space-evenly;
     color:#bdbdbd;
+}
+
+.adom{
+    background-color: #673291;
+    color:#d8c2d9;
+}
+
+.adom a{
+    color:#d8c2d9;
 }
 
 footer>:first-child{
