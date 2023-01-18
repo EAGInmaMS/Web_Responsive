@@ -128,6 +128,7 @@ h1,h2{
     #promociones{
         width: 90%;
         height: 40vh;
+        text-align: center;
     }
 
     #promociones img{
@@ -371,6 +372,8 @@ a{
 	color: #7F052A;
 	text-decoration: none;
 	font-size: large;
+    font-family: 'Sofia', sans-serif;
+    font-weight: bold;
 }
 
 #lista_categorias ol>li a:hover{
@@ -386,10 +389,19 @@ a{
 	margin: 3% auto;
 	border-radius: 22px;
 	padding: 2rem;
-	width: 60%;
+	width: 50%;
     height: 4rem;
-	font-family:'Graduate', cursive;
+    background-size: 20rem;
+    background-repeat: no-repeat;
+	background-position: left;
 }
+
+#lista_categorias a{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
 #lista_categorias ol{
 	margin: 1rem auto;
 	display: inline;
@@ -397,82 +409,52 @@ a{
 
 #accesorios{
     background-image: url(https://www.nosolorol.com/img/c/20-category_small.jpg);
-    background-repeat: no-repeat;
-	background-position: left;
-    background-size: 25rem;
 }
 
 #aquelarre{
     background-image: url(https://www.nosolorol.com/899-home_default/aquelarre-pantalla-del-dj-papel.jpg);
-    background-repeat: no-repeat;
-	background-position:left;
-    background-size: 25rem;
 }
 
 #blacksad{
     background-image: url(https://www.nosolorol.com/img/c/112-category_small.jpg);
-    background-repeat: no-repeat;
-	background-position:left;
-    background-size: 25rem;
 }
 
 #changeling{
     background-image: url(https://www.nosolorol.com/img/c/140-category_small.jpg);
-    background-repeat: no-repeat;
-	background-position:left;
-    background-size: 25rem;
 }
 
 #conbarba{
     background-image: url(https://www.nosolorol.com/img/c/102-category_small.jpg);
-    background-repeat: no-repeat;
-	background-position:left;
-    background-size: 25rem;
 }
 
 #fate{
     background-image: url(https://www.nosolorol.com/img/c/114-category_small.jpg);
-    background-repeat: no-repeat;
-	background-position:left;
-    background-size: 25rem;
 }
 
 #fl{
     background-image: url(https://www.nosolorol.com/img/c/154-category_small.jpg);
-    background-repeat: no-repeat;
-	background-position:left;
-    background-size: 25rem;
 }
 
 #resurgir{
     background-image: url(https://www.nosolorol.com/img/c/127-category_small.jpg);
-    background-repeat: no-repeat;
-	background-position:left;
-    background-size: 25rem;
 }
 
 #fragmentos{
     background-image: url(https://www.nosolorol.com/img/c/22-category_small.jpg);
-    background-repeat: no-repeat;
-	background-position:left;
-    background-size: 25rem;
 }
 
 #hitos{
     background-image: url(https://www.nosolorol.com/img/c/23-category_small.jpg);
-    background-repeat: no-repeat;
-	background-position:left;
-    background-size: 25rem;
 }
 
-@media (max-width:768px){
+@media (max-width:1339px){
     #lista_categorias a{
-        color: #7F052A;
+        color: antiquewhite;
     }
 
     #lista_categorias li{
-        height: 2rem;
-        background-size: 9rem;
+        height: auto;
+        background-size: cover;
     }
 }
 
@@ -506,6 +488,19 @@ a{
     border: 2px solid antiquewhite;
     margin: 0.5rem auto;
     padding: 0.5rem;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: large;
+}
+
+#unoticias p:nth-child(2){
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+#unoticias p{
+    font-family: 'Comfortaa', cursive;
+    font-size: small;
 }
 
 @media (max-width:768px){
@@ -544,10 +539,6 @@ a{
 }
 
 #packs h2{
-    color: #673291;
-}
-
-.hadom{
     color: #673291;
 }
 
@@ -597,6 +588,7 @@ a{
     width: 60%;
     margin: 2rem auto;
     font-family: 'Comfortaa', cursive;
+    flex-wrap: wrap;
 }
 
 #producto div{
@@ -607,8 +599,12 @@ a{
     width: 100%;
 }
 
+#producto li{
+    padding: 0.5rem;
+}
+
 #producto>div:last-child{
-    margin-top:5rem;
+    margin-top:2rem;
 }
 
 #precio{
@@ -627,6 +623,7 @@ a{
     color: #d72282;
     margin: 1rem auto;
     font-family: 'Sofia Sans', sans-serif;
+    display: block;
 }
 
 #descripack{
@@ -660,20 +657,30 @@ a{
     text-align: justify;
 }
 
+@media (max-width:768px){
+    #producto div{
+        width: 70%;
+    }
+
+    #producto>div:last-child{
+        margin-top: 0.5rem;
+    }
+
+    #descripack{
+        justify-content: space-between;
+    }
+
+    #descripack div{
+        width: 70%;
+        margin: 1rem auto;
+    }
+}
+
 footer{
     background-color: #7F052A;
     display: flex;
     justify-content: space-evenly;
     color:#bdbdbd;
-}
-
-.adom{
-    background-color: #673291;
-    color:#d8c2d9;
-}
-
-.adom a{
-    color:#d8c2d9;
 }
 
 footer>:first-child{
