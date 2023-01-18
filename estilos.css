@@ -523,11 +523,10 @@ a{
 #cabecera p,#quees p,#manual p{
     font-family: 'Comfortaa', cursive;
     text-align: justify;
-    font-size: large;
 }
 
 #cabecera img,#quees img, #manual img{
-    width: 50%;
+    width: 45%;
     margin: 0rem auto;
 }
 
@@ -655,10 +654,15 @@ a{
     display: flex;
     flex-direction: column;
     margin: 1rem 0rem;
+    height: 305px;
     border: 2px solid #673291;
     padding: 1rem;
     border-radius: 15px;
+    background-image: url(img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 #descripack div>p:first-child{
     font-family: 'Sofia Sans', sans-serif;
@@ -701,6 +705,10 @@ a{
         width: 100%;
         margin: 1rem auto;
     }
+}
+
+.hadom{
+    color: #673291;
 }
 
 footer{
