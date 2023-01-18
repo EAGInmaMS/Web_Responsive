@@ -582,6 +582,20 @@ a{
     font-size: large;
 }
 
+@media (max-width:768px){
+    #cabecera img,#quees img, #manual img{
+        width: 75%;
+    }
+
+    #packs>div{
+        justify-content: center;
+    }
+
+    #packs article{
+        width: 80%;
+    }
+}
+
 #producto{
     display: flex;
     justify-content: space-between;
@@ -623,6 +637,8 @@ a{
     color: #d72282;
     margin: 1rem auto;
     font-family: 'Sofia Sans', sans-serif;
+    font-size: large;
+    font-weight: bold;
     display: block;
 }
 
@@ -658,8 +674,18 @@ a{
 }
 
 @media (max-width:768px){
+    #producto{
+        width: 80%;
+    }
+
     #producto div{
-        width: 70%;
+        width: 90%;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    #producto img{
+        width: 100%;
     }
 
     #producto>div:last-child{
@@ -668,10 +694,11 @@ a{
 
     #descripack{
         justify-content: space-between;
+        width: 80%;
     }
 
     #descripack div{
-        width: 70%;
+        width: 100%;
         margin: 1rem auto;
     }
 }
@@ -708,5 +735,13 @@ footer>:last-child{
 
     footer>:first-child{
         padding: 0rem 1rem;
+    }
+
+    footer>:first-child>:first-child{
+        width: 70%;
+    }
+
+    footer i{
+        width: 30%;
     }
 }
