@@ -155,8 +155,9 @@ h1,h2{
     #productos{
         grid-template-columns: repeat(1,100%);
         grid-template-rows: repeat(9,11%);
-        grid-gap: 0.5rem;
-        width: 90%;
+        grid-gap: 1rem;
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -250,6 +251,33 @@ a{
     height: 13rem;
 }
 
+@media(max-width:995px){
+    #notisdestacadas{
+        width: 80%;
+    }
+    #notisdestacadas>:last-child{
+        flex-wrap: wrap;
+    }
+    #Nod,#Guaridas,#Detectives{
+        width: 45%;
+        height: 13rem;
+        margin: 1rem auto;
+    }
+
+    #catedestacadas{
+        width: 80%;
+    }
+
+    #catedestacadas>:last-child{
+        flex-wrap: wrap;
+    }
+
+    #accesor,#aquel,#cultos{
+        width: 45% !important;
+        margin: 1rem auto;
+    }
+}
+
 @media (max-width:768px){
     #notisdestacadas{
         width: 90%;
@@ -322,6 +350,7 @@ a{
     width: 60%;
     margin: 3rem auto;
     padding: 0.5rem;
+    flex-wrap: wrap;
 }
 
 #garantias div{
@@ -333,6 +362,12 @@ a{
 
 #garantias div>:nth-child(2){
     font-weight: bold;
+}
+
+@media(max-width:995px){
+    #garantias div{
+        width: 33%;
+    }
 }
 
 @media (max-width:768px){
@@ -580,7 +615,7 @@ a{
     font-family: 'Sofia Sans', sans-serif;
 }
 
-@media (max-width:768px){
+@media (max-width:865px){
     #cabecera img,#quees img, #manual img{
         width: 75%;
     }
@@ -653,7 +688,7 @@ a{
     display: flex;
     flex-direction: column;
     margin: 1rem 0rem;
-    
+    height: auto;
     border: 2px solid #673291;
     padding: 1rem;
     border-radius: 15px;
